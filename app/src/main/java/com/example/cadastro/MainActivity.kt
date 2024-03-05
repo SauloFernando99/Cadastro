@@ -31,6 +31,11 @@ class MainActivity : AppCompatActivity() {
         btnClear.setOnClickListener {
             clearFields()
         }
+
+        val btnSave: Button = findViewById(R.id.btnSave)
+        btnSave.setOnClickListener {
+            saveForm()
+        }
     }
 
     private fun clearFields() {
@@ -40,5 +45,22 @@ class MainActivity : AppCompatActivity() {
         rgSex.clearCheck()
         etCity.text.clear()
         spUf.setSelection(0)
+    }
+
+    private fun saveForm() {
+        val nomeCompleto = etFullName.text.toString()
+        val telefone = etPhone.text.toString()
+        val email = etEmail.text.toString()
+        val sexo = when (rgSex.checkedRadioButtonId) {
+            R.id.rbMale -> "Masculino"
+            R.id.rbFemale -> "Feminino"
+            else -> ""
+        }
+        val cidade = etCity.text.toString()
+        val uf = spUf.selectedItem.toString()
+
+        val formulario = Formulario(nomeCompleto, telefone, email, sexo, cidade, uf)
+
+        Toast.makeText(this, formulario.toString(), Toast.LENGTH_LONG).show()
     }
 }
