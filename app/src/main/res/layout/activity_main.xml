@@ -8,7 +8,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastro"
+        android:text="@string/cadastro"
         android:textSize="24sp"
         android:gravity="center"
         android:padding="16dp"/>
@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nome Completo"/>
+                android:text="@string/nome_completo"/>
 
             <EditText
                 android:id="@+id/etFullName"
@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefone"/>
+                android:text="@string/telefone"/>
 
             <EditText
                 android:id="@+id/etPhone"
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email"/>
+                android:text="@string/email"/>
 
             <EditText
                 android:id="@+id/etEmail"
@@ -77,7 +77,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sexo"/>
+                android:text="@string/sexo"/>
 
             <RadioGroup
                 android:id="@+id/rgSex"
@@ -89,13 +89,13 @@
                     android:id="@+id/rbMale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Masculino"/>
+                    android:text="@string/masculino"/>
 
                 <RadioButton
                     android:id="@+id/rbFemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Feminino"/>
+                    android:text="@string/feminino"/>
             </RadioGroup>
         </LinearLayout>
 
@@ -107,7 +107,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cidade"/>
+                android:text="@string/cidade"/>
 
             <EditText
                 android:id="@+id/etCity"
@@ -123,7 +123,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="UF"/>
+                android:text="@string/uf"/>
 
             <Spinner
                 android:id="@+id/spUf"
@@ -142,13 +142,13 @@
                 android:id="@+id/btnClear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Limpar"/>
+                android:text="@string/limpar"/>
 
             <Button
                 android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Salvar"/>
+                android:text="@string/salvar"/>
         </LinearLayout>
 
     </LinearLayout>
